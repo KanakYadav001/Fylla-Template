@@ -9,6 +9,18 @@ main {
   padding: 20px;
 }
 
+.header {
+  display: flex;
+}
+.header svg {
+  width: 5em;
+}
+.header p {
+  padding-top: 10px;
+  font-size: 1.6em;
+  padding-left: 20px;
+}
+
 .sec1 {
   width: 100%;
 }
@@ -20,7 +32,7 @@ main {
 .sec1 h1 {
   width: 30px;
   font-size: 3.6em;
-  font-weight: normal;
+  font-weight: 500;
 }
 .sec1 img {
   width: 20.5em;
@@ -53,7 +65,15 @@ main {
   padding: 11px;
   border-radius: 6px;
 }
-.sec2 div {
+
+.line {
+  border: 1px solid black;
+  opacity: 50%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.line3 {
   border: 1px solid black;
   opacity: 50%;
   width: 100%;
@@ -71,7 +91,7 @@ main {
   margin-top: 2em;
 }
 .sec3 h1 {
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1em;
 }
 .sec3 P {
@@ -84,7 +104,188 @@ main {
   margin-top: 20px;
 }
 
+.sec4 {
+  width: 100%;
+}
+.sec4 h1 {
+  width: 10%;
+  font-weight: 500;
+  font-size: 2em;
+}
+.sec4 p {
+  font-size: 1.3em;
+  font-weight: 1;
+}
+
+.sec5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sec5 .videos {
+  width: 100%;
+}
+.sec5 .videos h1 {
+  font-weight: 460;
+}
+.sec5 .videos p {
+  margin-top: -10px;
+}
+.sec5 .videos video {
+  width: 100%;
+  margin-top: 2em;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.se6se7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.se6se7 .sec6 {
+  width: 100%;
+  position: relative;
+}
+.se6se7 .sec6 svg {
+  margin-top: -22em;
+  width: 4em;
+  position: absolute;
+}
+.se6se7 .sec6 p {
+  letter-spacing: 0.1em;
+  margin-top: 7em;
+}
+.se6se7 .sec6 h1 {
+  font-weight: 400;
+  font-size: 3.1em;
+  margin-top: -10px;
+  line-height: 1;
+}
+.se6se7 div {
+  display: none;
+}
+.se6se7 .sec7 {
+  width: 100%;
+}
+.se6se7 .sec7 p {
+  font-size: 1.2em;
+  margin-top: -20px;
+  opacity: 70%;
+}
+.se6se7 .sec7 .butto {
+  background-color: black;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.line2 {
+  border: 1px solid black;
+  opacity: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sec8 {
+  width: 100%;
+}
+.sec8 .imgp {
+  width: 100%;
+  display: flex;
+}
+.sec8 .imgp svg {
+  width: 4em;
+  margin-top: 20px;
+}
+.sec8 .imgp p {
+  padding-top: 20px;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+.sec8 .div3 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding-top: 25px;
+}
+.sec8 .div3 .rd {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.sec8 .div3 .rd P {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+
+.lastsec {
+  width: 100%;
+  letter-spacing: 0.1em;
+}
+.lastsec a {
+  text-decoration: none;
+  color: rgb(79, 79, 79);
+}
+.lastsec .link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.lastsec .pages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.lastsec .pages .lbutto {
+  background-color: black;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.2em;
+  margin-top: 20px;
+}
+.lastsec .cms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.lastsec .utility {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Footer1 {
+  margin-top: 3em;
+  text-align: center;
+  width: 100%;
+}
+.Footer1 .fut p a {
+  color: rgb(79, 79, 79);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 1020px) {
+  main {
+    padding: 40px;
+  }
   .sec1 {
     width: 100%;
     display: flex;
@@ -110,11 +311,134 @@ main {
   .parentw2w3 {
     width: 100%;
     display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+  }
+  .parentw2w3 .sec3 {
+    padding-left: 20px;
+  }
+  .parentw2w3 .line {
+    height: initial;
+    width: 0px;
+    margin-right: 20px;
   }
   .parentw2w3 .web2 {
-    width: 80%;
+    width: 71%;
   }
   .parentw2w3 .web3 {
     width: 35%;
+  }
+  .parentw2w3 .sec2 {
+    justify-content: space-between;
+  }
+  .parentw2w3 .sec2 button {
+    margin-top: 28em;
+    width: 10em;
+  }
+  .parentw2w3 .sec2 h1 {
+    font-size: 4.8em;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+  .s4s5 {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+  }
+  .s4s5 .sec4 {
+    width: 40%;
+  }
+  .s4s5 .sec4 h1 {
+    font-size: 3em;
+    opacity: 10;
+    letter-spacing: 0.1em;
+  }
+  .s4s5 .sec4 P {
+    width: 80%;
+    font-weight: normal;
+  }
+  .s4s5 .line {
+    width: 0px;
+  }
+  .sec5 {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .sec5 .videos {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    width: 350px;
+    margin-top: -40px;
+  }
+  .sec5 .videos video {
+    width: 380px;
+  }
+  .se6se7 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+  }
+  .se6se7 .sec6 {
+    width: 70%;
+    margin-top: -4em;
+  }
+  .se6se7 .sec6 svg {
+    margin-top: 15em;
+    width: 4em;
+    position: relative;
+  }
+  .se6se7 .sec6 p {
+    letter-spacing: 0.2em;
+    margin-top: 6em;
+  }
+  .se6se7 .sec6 h1 {
+    font-weight: 500;
+    font-size: 4.3em;
+    letter-spacing: 0.1em;
+  }
+  .se6se7 div {
+    display: block;
+    width: 0px;
+  }
+  .se6se7 .sec7 {
+    width: 30%;
+    padding: 40px;
+  }
+  .se6se7 .sec7 p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    opacity: 70%;
+    opacity: 100%;
+  }
+  .se6se7 .sec7 .butto {
+    margin-top: 33em;
+  }
+  .bottom {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+  }
+  .bottom .sec8 {
+    width: 50%;
+  }
+  .bottom .lastsec {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 30px;
+  }
+  .bottom .lastsec .line {
+    display: none;
+  }
+  .bottom .lastsec .line2 {
+    display: none;
+  }
+  .line3 {
+    width: 0px;
   }
 }/*# sourceMappingURL=index.css.map */
